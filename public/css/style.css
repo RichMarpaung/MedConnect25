@@ -1,0 +1,414 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ========================================= */
+/* 1. GAYA DASAR & UMUM                      */
+/* ========================================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #212529;
+}
+
+/* Theme Colors */
+:root {
+    --primary-color: #0d6efd; /* Bootstrap Primary Blue */
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color) !important;
+    padding: 40px 0;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* ========================================= */
+/* 2. GAYA HALAMAN UTAMA (INDEX.HTML)        */
+/* ========================================= */
+
+/* New Hero Section */
+.hero-section-v2 {
+    padding: 100px 0;
+    background: linear-gradient(45deg, var(--primary-color), #3b82f6);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section-v2 .hero-image {
+    transform: rotate(3deg) scale(1.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Features Section */
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Redesigned Service Cards */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    position: relative; /* For stretched-link to work */
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    border-color: var(--primary-color);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #e7f1ff;
+    color: var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Modern Team Section */
+.team-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Testimonial Section */
+.testimonial-card {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ========================================= */
+/* 3. GAYA HALAMAN LOGIN (LOGIN.HTML)        */
+/* ========================================= */
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  /* background-image: url('https://picsum.photos/900/1200?random=10'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+}
+
+.form-floating label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    opacity: .65;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+#register-form,
+#login-form {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================= */
+/* 4. GAYA HALAMAN BOOKING (BOOKING.HTML)    */
+/* ========================================= */
+
+.booking-card {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-step {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.form-step.active {
+    display: block;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.progress-bar-step {
+    text-align: center;
+    width: 80px;
+    position: relative;
+    color: #b0b0b0;
+    transition: color 0.3s;
+}
+
+.progress-bar-step .step-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.progress-bar-step p {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.progress-bar-line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin-top: 25px;
+}
+
+.progress-bar-step.active {
+    color: var(--primary-color);
+}
+
+.progress-bar-step.active .step-icon {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Selection Cards (Layanan & Dokter) */
+.selection-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.selection-card:hover {
+    border-color: var(--primary-color);
+    background-color: #f8f9fa;
+}
+
+.selection-card.active {
+    border-color: var(--primary-color);
+    background-color: #e7f1ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+}
+
+.selection-card span {
+    font-weight: 600;
+}
+
+
+/* ========================================= */
+/* 5. GAYA HALAMAN PEMBAYARAN (PEMBAYARAN.HTML)*/
+/* ========================================= */
+.payment-card {
+    border: none;
+    border-radius: 15px;
+}
+
+.qris-image {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#success-message {
+    animation: fadeIn 0.5s;
+}
+/* public/css/style.css */
+
+/* ... (CSS Anda yang lain) ... */
+
+/* Tombol Dropdown Profil Bulat */
+.profile-dropdown-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important; /* Memaksa jadi bulat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Warna abu-abu muda */
+    padding: 0 !important;
+    color: #333 !important;
+    transition: background-color 0.2s;
+}
+
+/* Sembunyikan panah dropdown default */
+.profile-dropdown-btn::after {
+    display: none !important;
+}
+
+/* Beri efek hover */
+.profile-dropdown-btn:hover,
+.profile-dropdown-btn:focus {
+    background-color: #e0e0e0;
+}
+
+/* Perbaikan untuk ikon di dalam dropdown */
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+}
+.password-toggle-icon {
+    position: absolute;
+    right: 15px; /* Jarak dari kanan */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d; /* Warna abu-abu */
+    z-index: 5; /* Memastikan ikon di atas input */
+}
