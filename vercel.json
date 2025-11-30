@@ -45,6 +45,7 @@
         "DB_HOST": "2ebt7y.h.filess.io",
         "DB_PORT": "61002",
         "DB_DATABASE": "medtec_millnearly",
-        "DB_USERNAME": "medtec_millnearly"
+        "DB_USERNAME": "medtec_millnearly",
+        "DB_PASSWORD":"7970b8749b78f417390fe2287e1748c5046add73"
     }
 }
